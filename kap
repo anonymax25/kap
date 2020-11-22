@@ -33,12 +33,12 @@ if [[ "$#" == "1" ]]; then
 fi
 if [[ "$#" == "2" ]]; then
 
-    separator="\n"
-    if [ "${result##*"$separator"*}" ]; then
-        echo "Multiple PID found, feature not supported yet"
-        echo $result
-        exit 5
-    fi
+    #separator="\n"
+    #if [ "${result##*"$separator"*}" ]; then
+    #    echo "Multiple PID found, feature not supported yet"
+    #    echo $result
+    #    exit 5
+    #fi
     
     `kill -9 $result`
     echo "Killed: $result"
