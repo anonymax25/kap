@@ -27,6 +27,12 @@ echo "Error: No running process at port $port"; exit 4
 fi
 
 # TODO: result only first line, if -a option to do all ( verify its a port number)
+separator="\n"
+if [ "${result##*"$separator"*}" ]; then
+    echo "Multiple PID found, feature not supported yet"
+    echo $result
+    exit 5
+fi
 
 if [[ "$#" == "1" ]]; then
     echo "PID: $result"
