@@ -12,5 +12,5 @@ Set the script to your path to use it from anywhere
     sudo mv kap.sh /usr/local/bin/kap
 ```
 ## Examples
-Get the PID of the process using port 3000: ```kap 3000```
+Get the PID of the process using port 3000: ```kap 3000```  
 Kill the process using port 3000: ```kap -k 3000```  
